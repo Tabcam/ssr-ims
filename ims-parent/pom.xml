@@ -99,5 +99,6 @@
 	</build>
 	<modules>
 		<module>ims-component</module>
+		<module>ims-check</module>
 	</modules>
 </project>
