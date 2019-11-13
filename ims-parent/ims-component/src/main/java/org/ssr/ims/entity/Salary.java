@@ -11,7 +11,7 @@ import lombok.ToString;
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
-public class salary {
+public class Salary {
 	private Integer id;
 	private Integer salaryYear;
 	private Integer salaryMonth;

@@ -1,4 +1,4 @@
-package org.sss.ims.entity;
+package org.ssr.ims.entity;
 
 public class CheckStatistics {
 

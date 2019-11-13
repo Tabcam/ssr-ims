@@ -1,17 +1,17 @@
 package org.ssr.ims.entity;
 
-public class permission {
+public class Permission {
 
 	private Integer id;
 	private String name;
 	private String description;
 	private String uri;
 
-	public permission() {
+	public Permission() {
 		super();
 	}
 
-	public permission(Integer id, String name, String description, String uri) {
+	public Permission(Integer id, String name, String description, String uri) {
 		super();
 		this.id = id;
 		this.name = name;
