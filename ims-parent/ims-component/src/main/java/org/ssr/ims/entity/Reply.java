@@ -4,29 +4,31 @@ package org.ssr.ims.entity;
 import java.util.Date;
 
 public class Reply {
-	private Integer id;
-	private String title;
-	private Date sendTime;
-	private String content;
-	private Integer empId;
+	
+	//意见回复表
+	private Integer id;				//主键
+	private Date replyTime;			//回复时间
+	private Integer replyEmpid;		//回复员工的id
+	private String content;			//回复的内容
+	private Integer suggestionId;	//意见id
 	
 	public Reply() {
 		super();
 	}
 
-	public Reply(Integer id, String title, Date sendTime, String content, Integer empId) {
+	public Reply(Integer id, Date replyTime, Integer replyEmpid, String content, Integer suggestionId) {
 		super();
 		this.id = id;
-		this.title = title;
-		this.sendTime = sendTime;
+		this.replyTime = replyTime;
+		this.replyEmpid = replyEmpid;
 		this.content = content;
-		this.empId = empId;
+		this.suggestionId = suggestionId;
 	}
 
 	@Override
 	public String toString() {
-		return "Reply [id=" + id + ", title=" + title + ", sendTime=" + sendTime + ", content=" + content + ", empId="
-				+ empId + "]";
+		return "Reply [id=" + id + ", replyTime=" + replyTime + ", replyEmpid=" + replyEmpid + ", content=" + content
+				+ ", suggestionId=" + suggestionId + "]";
 	}
 
 	public Integer getId() {
@@ -37,20 +39,20 @@ public class Reply {
 		this.id = id;
 	}
 
-	public String getTitle() {
-		return title;
+	public Date getReplyTime() {
+		return replyTime;
 	}
 
-	public void setTitle(String title) {
-		this.title = title;
+	public void setReplyTime(Date replyTime) {
+		this.replyTime = replyTime;
 	}
 
-	public Date getSendTime() {
-		return sendTime;
+	public Integer getReplyEmpid() {
+		return replyEmpid;
 	}
 
-	public void setSendTime(Date sendTime) {
-		this.sendTime = sendTime;
+	public void setReplyEmpid(Integer replyEmpid) {
+		this.replyEmpid = replyEmpid;
 	}
 
 	public String getContent() {
@@ -61,13 +63,14 @@ public class Reply {
 		this.content = content;
 	}
 
-	public Integer getEmpId() {
-		return empId;
+	public Integer getSuggestionId() {
+		return suggestionId;
 	}
 
-	public void setEmpId(Integer empId) {
-		this.empId = empId;
+	public void setSuggestionId(Integer suggestionId) {
+		this.suggestionId = suggestionId;
 	}
 	
 	
+
 }

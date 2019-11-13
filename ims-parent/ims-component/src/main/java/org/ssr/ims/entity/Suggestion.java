@@ -5,11 +5,12 @@ import java.util.Date;
 
 public class Suggestion {
 	
-	private Integer id;
-	private String title;
-	private Date sendTime;
-	private String content;
-	private Integer empId;
+	/*意见表*/
+	private Integer id;		//主键
+	private String title;	//标题
+	private Date sendTime;	//发送时间
+	private String content;	//内容
+	private Integer empId;	//员工id
 	
 	public Suggestion() {
 		super();
