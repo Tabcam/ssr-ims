@@ -100,5 +100,6 @@
 	<modules>
 		<module>ims-component</module>
 		<module>ims-check</module>
+		<module>ims-permission</module>
 	</modules>
 </project>
