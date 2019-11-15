@@ -1,59 +1,50 @@
 package org.ssr.ims.entity;
 
-public class Permission {
-
+public class Dept {
+	
 	private Integer id;
 	private String name;
 	private String description;
-	private String uri;
-
-	public Permission() {
+	private Integer status;
+	public Dept() {
 		super();
 	}
-
-	public Permission(Integer id, String name, String description, String uri) {
+	public Dept(Integer id, String name, String description, Integer status) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.description = description;
-		this.uri = uri;
+		this.status = status;
 	}
-
 	@Override
 	public String toString() {
-		return "permission [id=" + id + ", name=" + name + ", description=" + description + ", uri=" + uri + "]";
+		return "Dept [id=" + id + ", name=" + name + ", description=" + description + ", status=" + status + "]";
 	}
-
 	public Integer getId() {
 		return id;
 	}
-
 	public void setId(Integer id) {
 		this.id = id;
 	}
-
 	public String getName() {
 		return name;
 	}
-
 	public void setName(String name) {
 		this.name = name;
 	}
-
 	public String getDescription() {
 		return description;
 	}
-
 	public void setDescription(String description) {
 		this.description = description;
 	}
-
-	public String getUri() {
-		return uri;
+	public Integer getStatus() {
+		return status;
 	}
-
-	public void setUri(String uri) {
-		this.uri = uri;
+	public void setStatus(Integer status) {
+		this.status = status;
 	}
+	
+	
 
 }
