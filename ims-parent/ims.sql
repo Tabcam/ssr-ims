@@ -1,3 +1,5 @@
+
+
 drop database if exists ims;
 create database ims character set utf8;
 use ims;
